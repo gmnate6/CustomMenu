@@ -39,10 +39,13 @@ Initializes the `CustomMenu` instance with a given `name` and a list of `choices
 Parameters:
 - `name` (str): The name of the menu (default: "Menu").
 - `choices` (list): A list of strings representing the available options (default: `["Yes", "No"]`).
+
 ```__str__(self)```
 Generates a string representation of the menu, which includes the header, choices, and a bottom border. It automatically adjusts the alignment to create a neat output.
+
 ```max_length_needed(self)```
 Calculates the maximum length required to align the choices and the menu name properly.
+
 ```ask(self)```
 Displays the menu to the user, waits for input, and returns the selected choice based on the index input by the user. If an invalid index is entered, it returns `None`.
 
